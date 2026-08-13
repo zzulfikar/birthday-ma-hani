@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Happy Birthday My Love ✨</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+</head>
+
+
+<body>
+
+    <!-- MAGICAL FAIRY DUST -->
+
+<div class="fairy-dust" aria-hidden="true">
+
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+
+</div>
+
+<div class="magic-stars" aria-hidden="true">
+
+    <span>✦</span>
+    <span>✧</span>
+    <span>✦</span>
+    <span>✧</span>
+    <span>✦</span>
+    <span>✧</span>
+
+</div>
+
+<audio
+    id="backgroundMusic"
+    loop
+    preload="auto"
+>
+    <source
+        src="assets/music/yang tercinta.mp3"
+        type="audio/mpeg"
+    >
+</audio>
+
+<div class="music-control">
+
+    <button
+        id="musicToggle"
+        type="button"
+        aria-label="Toggle music"
+    >
+
+        ♪
+
+    </button>
+
+    <span id="musicStatus">
+        Music On
+    </span>
+
+</div>
+
+
+    <!-- =========================
+         OPENING
+    ========================== -->
+
+    <section class="opening" id="opening">
+
+        <div class="sparkles">
+
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+
+        </div>
+
+        <div class="opening-content">
+
+            <p class="small-text">
+                ✨ A little magical world
+            </p>
+
+            <h1>
+                Made Just For You
+            </h1>
+
+            <p>
+                There is something waiting for you...
+            </p>
+
+            <button onclick="enterMagic()">
+                Enter the Magic ✨
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         MAIN WEBSITE
+    ========================== -->
+
+    <main>
+
+<section class="hero">
+
+    <div class="hero-glow"></div>
+
+    <div class="hero-particles">
+
+        <span>✦</span>
+        <span>✧</span>
+        <span>✦</span>
+        <span>✧</span>
+        <span>✦</span>
+        <span>✧</span>
+
+    </div>
+
+
+    <div class="hero-content">
+
+
+        <p class="hero-label">
+            ✨ Welcome to my little world ✨
+        </p>
+
+
+        <h1>
+
+            Happy Birthday,
+
+            <span>
+                Azizah Hanifah
+            </span>
+
+        </h1>
+
+
+        <!-- FOTO UTAMA -->
+
+        <div class="hero-photo">
+
+            <div class="photo-glow"></div>
+
+            <img
+                src="assets/images/foto-utama.jpg"
+                alt="Azizah Hanifah"
+            >
+
+        </div>
+
+
+        <p class="hero-description">
+
+A little corner of the internet
+made to celebrate you,
+your journey, and your special day.
+        </p>
+
+        <div class="hero-quote">
+
+    <span>“</span>
+
+    <p>
+Today, the stars shine a little brighter
+because it's your day.    </p>
+
+    <span>”</span>
+
+</div>
+
+
+        <div class="hero-scroll">
+
+            <span>
+                Scroll to explore
+            </span>
+
+            <div class="arrow">
+                ↓
+            </div>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+<section class="about-section" id="about">
+
+    <div class="about-container">
+
+
+        <!-- HEADING -->
+
+        <div class="about-heading">
+
+            <p class="section-label">
+                ✦ A LITTLE ABOUT YOU ✦
+            </p>
+
+            <h2>
+                The Girl Behind
+                The Magic
+            </h2>
+
+            <p>
+                Today is about celebrating
+                the wonderful person you are.
+            </p>
+
+        </div>
+
+
+        <!-- FOTO -->
+
+        <div class="about-photo">
+
+            <div class="about-photo-glow"></div>
+
+            <img
+                src="assets/images/foto-about.jpg"
+                alt="Birthday girl"
+            >
+
+        </div>
+
+
+        <!-- DESKRIPSI -->
+
+        <div class="about-description">
+
+            <p>
+                There are so many little things
+                about you that make you special.
+            </p>
+
+            <p>
+                The way you smile, the way you
+                laugh, the little things you do,
+                and all those tiny details that
+                somehow make you, you.
+            </p>
+
+        </div>
+
+
+        <!-- THINGS I LOVE -->
+
+        <div class="about-points">
+
+
+            <div class="about-point">
+
+                <span class="about-icon">
+                    ✦
+                </span>
+
+                <h3>
+                    Your Smile
+                </h3>
+
+                <p>
+                    A smile that can make
+                    an ordinary day feel
+                    a little brighter.
+                </p>
+
+            </div>
+
+
+            <div class="about-point">
+
+                <span class="about-icon">
+                    ✧
+                </span>
+
+                <h3>
+                    Your Kindness
+                </h3>
+
+                <p>
+                    The way you care about
+                    the people around you
+                    is something beautiful.
+                </p>
+
+            </div>
+
+
+            <div class="about-point">
+
+                <span class="about-icon">
+                    ✦
+                </span>
+
+                <h3>
+                    Your Little Things
+                </h3>
+
+                <p>
+                   Even the smallest things you do
+are part of what makes you wonderfully you.
+                </p>
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+</section>
+
+<!-- =========================
+     MY WISHES FOR YOU
+========================= -->
+
+<section class="wishes-section" id="wishes">
+
+    <div class="wishes-container">
+
+        <!-- HEADING -->
+
+        <div class="wishes-heading">
+
+            <p class="section-label">
+                ✦ A LITTLE WISH FOR YOU ✦
+            </p>
+
+            <h2>
+                My Wishes
+                For You
+            </h2>
+
+            <p>
+                On your special day, there are
+                a few things I hope life gives you.
+            </p>
+
+        </div>
+
+
+        <!-- WISH CARDS -->
+
+        <div class="wishes-grid">
+
+
+            <!-- WISH 1 -->
+
+            <div class="wish-card">
+
+                <div class="wish-number">
+                    01
+                </div>
+
+                <div class="wish-icon">
+                    ✦
+                </div>
+
+                <h3>
+                    Happiness
+                </h3>
+
+                <p>
+                    Semoga kamu selalu menemukan
+                    alasan untuk tersenyum, bahkan
+                    di hari-hari yang sederhana.
+                </p>
+
+            </div>
+
+
+            <!-- WISH 2 -->
+
+            <div class="wish-card">
+
+                <div class="wish-number">
+                    02
+                </div>
+
+                <div class="wish-icon">
+                    ✧
+                </div>
+
+                <h3>
+                    Your Dreams
+                </h3>
+
+                <p>
+                    Semoga semua impian yang kamu
+                    simpan perlahan menemukan
+                    jalannya untuk menjadi nyata.
+                </p>
+
+            </div>
+
+
+            <!-- WISH 3 -->
+
+            <div class="wish-card">
+
+                <div class="wish-number">
+                    03
+                </div>
+
+                <div class="wish-icon">
+                    ✦
+                </div>
+
+                <h3>
+                    Good Health
+                </h3>
+
+                <p>
+                    Semoga kamu selalu diberikan
+                    kesehatan dan kekuatan untuk
+                    menjalani setiap langkahmu.
+                </p>
+
+            </div>
+
+
+            <!-- WISH 4 -->
+
+            <div class="wish-card">
+
+                <div class="wish-number">
+                    04
+                </div>
+
+                <div class="wish-icon">
+                    ✧
+                </div>
+
+                <h3>
+                    Beautiful Days
+                </h3>
+
+                <p>
+                    Semoga tahun ini membawa lebih
+                    banyak hari indah, pengalaman
+                    baru, dan cerita yang membuatmu
+                    bahagia.
+                </p>
+
+            </div>
+
+
+        </div>
+
+
+        <!-- SMALL CLOSING -->
+
+        <div class="wishes-closing">
+
+            <span>✦</span>
+
+            <p>
+                And most of all, I hope you
+                never forget how special you are.
+            </p>
+
+            <span>✦</span>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- =========================
+     MEMORIES
+========================= -->
+
+<section class="glimpse-section" id="glimpse">
+
+<div class="glimpse-heading">
+
+    <p class="section-label">
+        ✦ A GLIMPSE OF YOU ✦
+    </p>
+
+    <h2>
+        Little Things
+        That Make You, You
+    </h2>
+
+    <p>
+        A collection of little smiles,
+        little moments, and little things
+        that make you wonderfully you.
+    </p>
+
+</div>
+
+<div class="glimpse-grid">
+
+        <!-- MEMORY 1 -->
+
+ <div class="memory-card">
+
+    <div class="memory-image">
+
+        <img
+            src="assets/images/smilee.jpg"
+            alt="Her beautiful smile"
+        >
+
+    </div>
+
+    <div class="memory-info">
+
+        <span>
+            ✦ HER LITTLE MAGIC
+        </span>
+
+        <h3>
+            That Beautiful Smile
+        </h3>
+
+        <p>
+            Salah satu hal kecil tentang kamu
+            yang selalu punya cara sendiri
+            untuk membuat suasana terasa lebih cerah.
+        </p>
+
+    </div>
+
+</div>
+
+        <!-- MEMORY 2 -->
+
+ <div class="memory-card">
+
+    <div class="memory-image">
+
+        <img
+            src="assets/images/heart.jpg"
+            alt="A beautiful moment"
+        >
+
+    </div>
+
+    <div class="memory-info">
+
+        <span>
+            ✦ THE WAY YOU ARE
+        </span>
+
+        <h3>
+            Your Beautiful Heart
+        </h3>
+
+        <p>
+            Ada banyak hal baik dalam dirimu
+            yang mungkin tidak selalu kamu sadari,
+            tapi selalu terlihat bagi orang yang mengenalmu.
+        </p>
+
+    </div>
+
+</div>
+
+
+        <!-- MEMORY 3 -->
+
+<div class="memory-card">
+
+    <div class="memory-image">
+
+        <img
+            src="assets/images/habits.jpg"
+            alt="Her little moments"
+        >
+
+    </div>
+
+    <div class="memory-info">
+
+        <span>
+            ✦ LITTLE THINGS
+        </span>
+
+        <h3>
+            Your Little Habits
+        </h3>
+
+        <p>
+            Hal-hal kecil yang mungkin terlihat
+            biasa saja, tapi justru menjadi bagian
+            dari dirimu yang paling aku suka.
+        </p>
+
+    </div>
+
+</div>
+
+
+        <!-- MEMORY 4 -->
+
+ <div class="memory-card">
+
+    <div class="memory-image">
+
+        <img
+            src="assets/images/trying.jpg"
+            alt="Her beautiful presence"
+        >
+
+    </div>
+
+    <div class="memory-info">
+
+        <span>
+            ✦ JUST YOU
+        </span>
+
+        <h3>
+            Beautiful Without Trying
+        </h3>
+
+        <p>
+            Kamu tidak perlu melakukan sesuatu
+            yang luar biasa untuk terlihat spesial.
+            Menjadi dirimu sendiri sudah cukup.
+        </p>
+
+    </div>
+
+</div>
+
+
+        <!-- MEMORY 5 -->
+
+<div class="memory-card">
+
+    <div class="memory-image">
+
+        <img
+            src="assets/images/memory-5.jpg"
+            alt="Her journey"
+        >
+
+    </div>
+
+    <div class="memory-info">
+
+        <span>
+            ✦ YOUR JOURNEY
+        </span>
+
+        <h3>
+            Look How Far You've Come
+        </h3>
+
+        <p>
+            Dari hari-hari kecil sampai hari ini,
+            kamu sudah melewati begitu banyak hal.
+            Dan aku harap kamu selalu bangga
+            dengan sejauh apa kamu telah tumbuh.
+        </p>
+
+    </div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- =========================
+     A LETTER FOR YOU
+========================= -->
+
+<section class="letter-section" id="letter">
+
+    <div class="letter-container">
+
+        <!-- HEADING -->
+
+        <div class="letter-heading">
+
+            <p class="section-label">
+                ✦ A LITTLE LETTER ✦
+            </p>
+
+            <h2>
+                A Letter
+                For You
+            </h2>
+
+            <p>
+                Some things are easier to write
+                than to say.
+            </p>
+
+        </div>
+
+
+        <!-- ENVELOPE -->
+
+        <div class="letter-envelope">
+
+            <div class="letter-paper">
+
+                <div class="letter-content">
+
+                    <p class="letter-greeting">
+                        Dear Birthday Girl,
+                    </p>
+
+
+                    <p>
+                        Happy Birthday, Azizah.
+                        Today is your day, and I hope
+                        you let yourself enjoy every
+                        little part of it.
+                    </p>
+
+
+                    <p>
+                        I hope when you look back at
+                        everything you've been through,
+                        you realize just how much you've
+                        grown and how far you've come.
+                    </p>
+
+
+                    <p>
+                        There will always be days that
+                        feel difficult, days when things
+                        don't go exactly the way you hoped.
+                        But I hope you never forget
+                        how strong you are.
+                    </p>
+
+
+                    <p>
+                        Keep chasing the things that make
+                        your heart happy. Keep dreaming
+                        about the things you want to achieve.
+                        And please never be afraid to become
+                        the person you've always wanted to be.
+                    </p>
+
+
+                    <p>
+                        I hope this new chapter brings you
+                        beautiful surprises, peaceful days,
+                        genuine happiness, and many reasons
+                        to smile.
+                    </p>
+
+
+                    <p>
+                        And whenever you doubt yourself,
+                        I hope you remember that there is
+                        someone who will always be proud
+                        of the person you are becoming.
+                    </p>
+
+
+                    <p>
+                        You deserve to be celebrated today.
+                        Not because of what you've achieved,
+                        but simply because you are you.
+                    </p>
+
+
+                    <p>
+                        So for today, forget about everything
+                        else for a little while.
+
+                        Smile a little more.
+                        Make a wish.
+                        Enjoy your day.
+
+                        <br><br>
+
+                        Because today is yours.
+                    </p>
+
+
+                    <p class="letter-signature">
+                        Happy Birthday,
+                        <br>
+                        with all my heart.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- CLOSING -->
+
+        <div class="letter-closing">
+
+            <span>✦</span>
+
+            <p>
+                Made especially for you,
+                because you deserve a little magic.
+            </p>
+
+            <span>✦</span>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+
+
+        <!-- =========================
+     FINAL BIRTHDAY
+========================= -->
+
+<section
+    class="final-section"
+    id="final"
+>
+
+    <div class="final-stars">
+
+        <span>✦</span>
+        <span>✧</span>
+        <span>✦</span>
+        <span>✧</span>
+
+    </div>
+
+
+    <div class="final-content">
+
+        <p class="section-label">
+            ✦ ONE LAST WISH ✦
+        </p>
+
+
+        <h2>
+            Happy Birthday
+        </h2>
+
+
+        <h3>
+            Azizah Hanifah
+        </h3>
+
+
+        <div class="final-line"></div>
+
+
+        <p class="final-message">
+
+    If I could give you one wish today,
+    I would wish for you to always see
+    how beautiful, strong, and wonderful
+    you truly are.
+
+        </p>
+
+
+        <p class="final-message">
+
+    May this new chapter bring you
+    closer to your dreams, fill your days
+    with beautiful little moments,
+    and give you countless reasons to smile.
+
+        </p>
+
+
+        <div class="final-heart">
+            ✦
+        </div>
+
+
+        <p class="final-signature">
+            Keep shining, birthday girl.
+        </p>
+
+
+        <div class="final-decoration">
+            ✦ &nbsp; ✧ &nbsp; ✦
+        </div>
+
+    </div>
+
+</section>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+
+
+</html>
