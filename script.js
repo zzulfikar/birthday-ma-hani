@@ -299,5 +299,27 @@ if (musicToggle) {
 
 }
 
+function enterMagic() {
 
+    const opening = document.getElementById("opening");
+
+    if (!opening) {
+        return;
+    }
+
+    opening.style.opacity = "0";
+    opening.style.pointerEvents = "none";
+
+    setTimeout(() => {
+
+        opening.style.display = "none";
+
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+
+    }, 700);
+
+}
 
