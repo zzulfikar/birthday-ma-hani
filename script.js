@@ -319,3 +319,21 @@ if (letterWrapper && letterClosed) {
     });
 
 }
+
+
+/* =========================================
+   INTERACTIVE BIRTHDAY LETTER
+========================================= */
+
+const letterWrapper = document.querySelector(".letter-wrapper");
+const letterClosed = document.querySelector("#letterClosed");
+
+if (letterWrapper && letterClosed) {
+
+    letterClosed.addEventListener("click", () => {
+
+        letterWrapper.classList.add("opened");
+
+    });
+
+}
