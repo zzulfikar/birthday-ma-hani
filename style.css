@@ -5765,3 +5765,28 @@ button:hover {
     }
 
 }
+
+
+/* =========================================
+   LETTER OPEN / CLOSE FIX
+========================================= */
+
+/* Surat TERSEMBUNYI saat pertama kali website dibuka */
+.letter-opened {
+    display: none !important;
+}
+
+/* Amplop terlihat */
+.letter-closed {
+    display: block;
+    cursor: pointer;
+}
+
+/* Setelah amplop diklik */
+.letter-wrapper.opened .letter-closed {
+    display: none !important;
+}
+
+.letter-wrapper.opened .letter-opened {
+    display: block !important;
+}
