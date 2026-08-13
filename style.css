@@ -5289,3 +5289,479 @@ button:hover {
     }
 
 }
+
+/* =========================================
+   INTERACTIVE BIRTHDAY LETTER
+========================================= */
+
+.letter-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 700px;
+    margin: 50px auto 0;
+}
+
+
+/* CLOSED LETTER */
+
+.letter-closed {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+
+    transition:
+        opacity 0.5s ease,
+        transform 0.5s ease;
+}
+
+
+.envelope {
+    position: relative;
+
+    width: 420px;
+    height: 280px;
+
+    max-width: 90vw;
+
+    cursor: pointer;
+
+    filter:
+        drop-shadow(
+            0 25px 35px
+            rgba(0, 0, 0, 0.25)
+        );
+
+    transition:
+        transform 0.5s ease;
+}
+
+
+.envelope:hover {
+    transform:
+        translateY(-10px)
+        rotate(-1deg);
+}
+
+
+/* ENVELOPE BODY */
+
+.envelope-body {
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            145deg,
+            #f5edcf,
+            #e7d7aa
+        );
+
+    border-radius: 5px;
+
+    overflow: hidden;
+
+    border:
+        1px solid
+        rgba(183, 146, 69, 0.5);
+}
+
+
+/* ENVELOPE FLAP */
+
+.envelope-flap {
+    position: absolute;
+
+    z-index: 3;
+
+    top: 0;
+    left: 0;
+
+    width: 0;
+    height: 0;
+
+    border-left:
+        210px solid transparent;
+
+    border-right:
+        210px solid transparent;
+
+    border-top:
+        145px solid #d8c38c;
+
+    filter:
+        drop-shadow(
+            0 3px 3px
+            rgba(0, 0, 0, 0.08)
+        );
+
+    transition:
+        transform 0.8s ease;
+}
+
+
+/* SEAL */
+
+.envelope-seal {
+
+    position: absolute;
+
+    z-index: 4;
+
+    top: 105px;
+    left: 50%;
+
+    transform:
+        translateX(-50%);
+
+    width: 55px;
+    height: 55px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background:
+        #174d3b;
+
+    color:
+        #e8d38b;
+
+    font-size: 23px;
+
+    box-shadow:
+        0 0 25px
+        rgba(232, 211, 139, 0.35);
+
+    transition:
+        transform 0.5s ease;
+}
+
+
+/* TEXT */
+
+.envelope-text {
+
+    position: absolute;
+
+    z-index: 2;
+
+    bottom: 25px;
+
+    width: 100%;
+
+    margin: 0;
+
+    text-align: center;
+
+    color:
+        #174d3b;
+
+    font-family:
+        'Cormorant Garamond',
+        Georgia,
+        serif;
+
+    font-size: 23px;
+
+    font-style: italic;
+
+    line-height: 1.2;
+}
+
+
+/* HINT */
+
+.open-hint {
+
+    margin-top: 25px;
+
+    color:
+        rgba(232, 211, 139, 0.75);
+
+    font-size: 11px;
+
+    letter-spacing: 3px;
+
+    animation:
+        letterHint 2s ease-in-out infinite;
+}
+
+
+/* OPENED LETTER */
+
+.letter-opened {
+    display: none;
+
+    opacity: 0;
+
+    transform:
+        translateY(30px)
+        scale(0.96);
+}
+
+
+/* PAPER */
+
+.letter-opened .letter-paper {
+
+    position: relative;
+
+    width: 100%;
+
+    padding:
+        60px 65px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #faf5e5,
+            #eee1bd
+        );
+
+    border-radius: 5px;
+
+    box-shadow:
+        0 30px 60px
+        rgba(0, 0, 0, 0.25);
+
+    color:
+        #263d32;
+
+    text-align: left;
+}
+
+
+/* LITTLE PAPER DECORATION */
+
+.letter-opened .letter-paper::before {
+
+    content: "✦";
+
+    position: absolute;
+
+    top: 25px;
+    right: 30px;
+
+    color:
+        #b79245;
+
+    font-size: 20px;
+}
+
+
+.letter-opened .letter-paper::after {
+
+    content: "✧";
+
+    position: absolute;
+
+    bottom: 25px;
+    left: 30px;
+
+    color:
+        #b79245;
+
+    font-size: 18px;
+}
+
+
+/* LETTER TEXT */
+
+.letter-opened .letter-content {
+
+    max-width: 580px;
+
+    margin: 0 auto;
+}
+
+
+.letter-opened .letter-content p {
+
+    margin-bottom: 22px;
+
+    font-family:
+        'Cormorant Garamond',
+        Georgia,
+        serif;
+
+    font-size: 18px;
+
+    line-height: 1.9;
+
+    color:
+        #30483d;
+}
+
+
+.letter-opened .letter-greeting {
+
+    font-size: 25px !important;
+
+    font-style: italic;
+
+    color:
+        #174d3b !important;
+
+    margin-bottom: 30px !important;
+}
+
+
+.letter-opened .letter-signature {
+
+    margin-top: 35px;
+
+    text-align: right;
+
+    font-style: italic;
+
+    color:
+        #174d3b !important;
+
+    font-size: 21px !important;
+}
+
+
+/* OPEN ANIMATION */
+
+.letter-wrapper.opened .letter-closed {
+
+    animation:
+        letterDisappear 0.7s ease forwards;
+
+}
+
+
+.letter-wrapper.opened .letter-opened {
+
+    display: block;
+
+    animation:
+        letterAppear 1s
+        0.35s ease forwards;
+
+}
+
+
+/* ANIMATIONS */
+
+@keyframes letterDisappear {
+
+    0% {
+        opacity: 1;
+        transform:
+            translateY(0)
+            scale(1);
+    }
+
+    100% {
+        opacity: 0;
+        transform:
+            translateY(-40px)
+            scale(0.9);
+    }
+
+}
+
+
+@keyframes letterAppear {
+
+    0% {
+        opacity: 0;
+        transform:
+            translateY(40px)
+            scale(0.95);
+    }
+
+    100% {
+        opacity: 1;
+        transform:
+            translateY(0)
+            scale(1);
+    }
+
+}
+
+
+@keyframes letterHint {
+
+    0%,
+    100% {
+        opacity: 0.45;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    .envelope {
+
+        width: 340px;
+        height: 225px;
+
+    }
+
+
+    .envelope-flap {
+
+        border-left-width:
+            170px;
+
+        border-right-width:
+            170px;
+
+        border-top-width:
+            115px;
+
+    }
+
+
+    .envelope-seal {
+
+        top: 82px;
+
+        width: 48px;
+        height: 48px;
+
+        font-size: 20px;
+
+    }
+
+
+    .envelope-text {
+
+        bottom: 20px;
+
+        font-size: 20px;
+
+    }
+
+
+    .letter-opened .letter-paper {
+
+        padding:
+            40px 25px;
+
+    }
+
+
+    .letter-opened .letter-content p {
+
+        font-size: 16px;
+
+        line-height: 1.8;
+
+    }
+
+}
