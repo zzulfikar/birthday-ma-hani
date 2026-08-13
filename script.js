@@ -1,12 +1,4 @@
-function enterMagic() {
 
-    const opening = document.getElementById("opening");
-
-    createMagicParticles();
-
-    opening.classList.add("magic-out");
-
-}
 
 function createMagicParticles() {
 
@@ -213,38 +205,6 @@ document.addEventListener(
     }
 );
 
-function enterMagic() {
-
-    const opening =
-        document.querySelector(".opening");
-
-    const music =
-        document.getElementById(
-            "backgroundMusic"
-        );
-
-
-    opening.classList.add("magic-out");
-
-
-    if (music) {
-
-        music.volume = 0.35;
-
-        music.play().catch(
-            (error) => {
-
-                console.log(
-                    "Music could not start:",
-                    error
-                );
-
-            }
-        );
-
-    }
-
-}
 
 /* =========================
    MUSIC CONTROL
@@ -299,27 +259,66 @@ if (musicToggle) {
 
 }
 
+/* =========================
+   ENTER THE MAGIC
+========================= */
+
 function enterMagic() {
 
-    const opening = document.getElementById("opening");
+    const opening =
+        document.getElementById("opening");
 
     if (!opening) {
         return;
     }
 
-    opening.style.opacity = "0";
-    opening.style.pointerEvents = "none";
+    createMagicParticles();
 
-    setTimeout(() => {
+    opening.classList.add("magic-out");
 
-        opening.style.display = "none";
+    const music =
+        document.getElementById("backgroundMusic");
 
-        window.scrollTo({
-            top: 0,
-            behavior: "smooth"
-        });
+    if (music) {
 
-    }, 700);
+        music.volume = 0.35;
+
+        music.play().catch(
+            (error) => {
+
+                console.log(
+                    "Music could not start:",
+                    error
+                );
+
+            }
+        );
+
+    }
+
+}
+
+/* =========================
+   BIRTHDAY LETTER
+========================= */
+
+const birthdayLetter =
+    document.querySelector(".birthday-letter");
+
+const letterClosed =
+    document.getElementById("letterClosed");
+
+
+if (birthdayLetter && letterClosed) {
+
+    letterClosed.addEventListener(
+        "click",
+        function () {
+
+            birthdayLetter.classList.add("opened");
+
+        }
+    );
 
 }
 
