@@ -5816,3 +5816,10 @@ button:hover {
     pointer-events: auto;
 }
 
+.about-photo img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    object-fit: cover;
+}
