@@ -5790,3 +5790,11 @@ button:hover {
 .letter-wrapper.opened .letter-opened {
     display: block !important;
 }
+
+/* Make the letter clickable */
+.letter-closed {
+    position: relative;
+    z-index: 100;
+    cursor: pointer;
+    pointer-events: auto;
+}
