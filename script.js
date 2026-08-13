@@ -322,3 +322,19 @@ if (birthdayLetter && letterClosed) {
 
 }
 
+
+const letterWrapper =
+    document.querySelector(".letter-wrapper");
+
+const letterClosed =
+    document.getElementById("letterClosed");
+
+if (letterWrapper && letterClosed) {
+
+    letterClosed.addEventListener("click", function () {
+
+        letterWrapper.classList.add("opened");
+
+    });
+
+}
