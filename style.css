@@ -5798,3 +5798,21 @@ button:hover {
     cursor: pointer;
     pointer-events: auto;
 }
+
+.letter-wrapper.opened .letter-closed
+.letter-wrapper.opened .letter-opened
+
+/* FINAL LETTER CLICK FIX */
+
+.letter-wrapper {
+    position: relative;
+    z-index: 50;
+}
+
+.letter-closed {
+    position: relative;
+    z-index: 100;
+    cursor: pointer;
+    pointer-events: auto;
+}
+
